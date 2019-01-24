@@ -1,0 +1,436 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+@font-face {
+    font-family: 'Terminal Grotesque Open';
+    src: url('TerminalGrotesque-Open.woff2') format('woff2'),
+        url('TerminalGrotesque-Open.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -----  Navigation  --------------- */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    padding: 20px 0 0 20px;
+}
+
+.meta,
+.meta a {
+    color: #B63F2B;
+    font-size: 17px;
+    font-family: 'Terminal Grotesque Open';
+    text-decoration: none;
+}
+
+.meta {
+    margin: 6px 0 16px 0;
+    display: block;
+}
+
+ul.menu {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.menu-item {
+    display: block;
+    margin: 0px;
+}
+
+.menu-item a {
+    border-bottom: 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-item.is-active a {
+    border-bottom: 1px solid #000000;
+}
+
+/* -----  Main  ---------------------------------------- */
+
+.main {
+    margin-left: 260px;
+    width: 60%;
+    max-width: 700px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* -----  Basic  --------------- */
+body,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #B63F2B;
+    font-style: normal;
+    word-spacing: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin: 0 auto;
+    text-align: left;
+}
+
+p {
+    margin: 0 auto 20px 0;
+}
+
+.intro {
+    font-family: 'Terminal Grotesque Open';
+    font-size: 70px;
+    margin-bottom: 30px;
+    line-height: .9;
+}
+
+a {
+    color: #ff3f3d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Terminal Grotesque Open';
+    font-size: 90px;
+    margin-bottom: 30px;
+    line-height: .9;
+}
+
+h2 {
+    font-weight: 700;
+    margin: 60px 0 12px 0;
+    line-height: .9;
+}
+
+/* h3 {
+    font-family: antique-olive-condensed, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: .5px;
+    margin: 40px 0 12px 0;
+    line-height: .9;
+} */
+
+h4 {
+    margin: 30px 0 2px 0;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0 6px 0;
+}
+
+ul {
+    margin: 0px 0px 20px 25px;
+}
+
+li {
+    list-style-type: circle;
+    margin: 0 0 20px;
+}
+
+pre {
+    padding: 20px;
+    background: #f2f2f2;
+    margin: 10px 0 20px 0;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-line;
+    font-size: 17px;
+}
+
+hr {
+    border-top: 1px dashed #ff3f3d;
+    margin-top: 40px;
+}
+
+hr.more-space {
+    margin-top: 60px;
+}
+
+/* -----  Colored backgrounds  --------------- */
+.thistle {
+    background-color: thistle;
+}
+
+.lilac {
+    background-color: #dad8f9;
+}
+
+.salmon {
+    background-color: #fbdad0;
+}
+
+.blue {
+    background-color: #d4e6ff;
+}
+
+.yellow {
+    background-color: #ffd8bd;
+}
+
+.mint {
+    background-color: #fffaf1;
+}
+
+/* -----  Projects  --------------- */
+li.project-row {
+    list-style-type: none;
+}
+
+ul.projects {
+    margin: 40px 0 0 0;
+}
+
+h2.projects {
+    margin-top: 24px;
+}
+
+
+/* -----  Library  --------------- */
+ul.library {
+    margin: 0px;
+}
+
+li.library-row {
+    list-style-type: none;
+}
+
+li.library-row div {
+    text-align: right;
+}
+
+li.library-row span.title {
+    width: 480px;
+}
+
+li.library-row span.title,
+li.library-row div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pdf {
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.download-sentence {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+h2.library {
+    margin-bottom: 2px;
+}
+
+/* -----  Calendar  --------------- */
+.calendar h2 {
+    margin-top: 40px;
+}
+
+.calendar p {
+    font-size: 20px;
+}
+
+ul.calendar {
+    margin: 60px 0 0 0;
+}
+
+ul.calendar li {
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.calendar li.calendar-row {
+    border-top: 2px solid #B63F2B;
+    padding: 20px 0 20px 0;
+}
+
+ul.calendar li ul li {
+    list-style-type: circle;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+ul.calendar .body {
+    border-top: 1px dashed;
+    margin-top: 20px;
+}
+
+.title {
+    position: relative;
+    cursor: pointer;
+}
+
+.title-current {
+    color: #ff3f3d;
+}
+
+.week {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+
+}
+
+.days {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.projects-start-end {
+    float: right;
+    font-family: 'Terminal Grotesque Open';
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-top: 7px;
+}
+
+.body {
+    display: none;
+}
+
+.doc {
+    margin-top: 50px;
+}
