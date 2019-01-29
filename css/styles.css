@@ -443,12 +443,16 @@ ul.calendar .body {
 
     /* -----  Nav  --------------- */
     .sidenav {
-        /* width: 100%; */
         background: white;
         height: auto;
         padding: 10px;
         position: relative;
         flex: 0 0 auto;
+        margin-bottom: 30px
+    }
+
+    .nav-container {
+        position: unset;
     }
 
     .sidenav a:not(:first-child) {
@@ -496,10 +500,6 @@ ul.calendar .body {
 
 
     /* -----  Content  --------------- */
-    .main {
-        margin: 0 auto;
-    }
-
     .intro {
         font-size: 40px;
     }
@@ -513,7 +513,7 @@ ul.calendar .body {
     }
 }
 
-/* -----  Responsive medium  --------------- */
+/* -----  Responsive medium width  --------------- */
 @media screen and (max-width: 1000px) and (min-width: 601px) {
     .intro {
         font-size: 7vw;
