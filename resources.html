@@ -9,18 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Interactive 1</title>
 </head>
 
-<body class="yellow">
-    <nav class="sidenav" role="navigation">
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="index.html" rel="home">Interactive 1</a>
-            </li>
-        </ul>
+<div class="container yellow">
+
+    <nav class="sidenav" role="navigation" id="mySidenav">
+        <a href="index.html" rel="home">Interactive 1</a>
         <span class="meta">
             GRAPH-212-02</br>
             CCA</br>
@@ -30,133 +28,118 @@
             TA: <a href="mailto:j.luo@cca.edu">Jillian Luo</a></br>
             IA: <a href="mailto:henry@cca.edu">Henry Rivera</a></br>
         </span>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="syllabus.html">Syllabus</a>
-            </li>
-            <li class="menu-item">
-                <a href="calendar.html">Calendar</a>
-            </li>
-            <li class="menu-item">
-                <a href="projects.html">Projects</a>
-            </li>
-            <li class="menu-item">
-                <a href="resources.html">Resources</a>
-            </li>
-            <li class="menu-item">
-                <a href="library.html">Library</a>
-            </li>
-        </ul>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="projects.html">Projects</a>
+        <a href="resources.html" class="is-active">Resources</a>
+        <a href="library.html">Library</a>
+        <a class="icon">Menu</a>
     </nav>
 
-
-    <section>
-        <div class="main">
-            <h1>Resources</h1>
-            <h2>Lectures</h2>
-            <p><a href="http://spring2019.designing.tools/resources/lecture01_internet_history.pdf" rel="noopener noreferrer"
-                    target="_blank">Internet History</a><br />
-                <a href="http://spring2019.designing.tools/resources/lecture02_ASCII.pdf" rel="noopener noreferrer"
-                    target="_blank">ASCII
-                    Art</a></p>
-            <h2>Technical Docs</h2>
-            <p><a href="https://paper.dropbox.com/doc/HTML--AWE8AYPwxeQUcIqFwWCCqgUyAQ-PntnlBxy7gSQ4yem3rJCY" rel="noopener noreferrer"
-                    target="_blank">Review Technical Document: HTML Part 1</a></p>
-            <h2>In-Class Exercises</h2>
-            <p><a href="https://paper.dropbox.com/doc/In-class-exercise-Set-up-a-class-website-with-GitHub--AWFeE8Ihig8LoXYIuqFS8qdmAQ-BZ3x15gIvuKOawrP6RIh3"
-                    rel="noopener noreferrer" target="_blank">In-Class Exercise: Class Website</a></p>
-            <h2>Workshop / Weekly Exercises</h2>
-            <p><a href="https://paper.dropbox.com/doc/Exercise-0-ASCII-Town--AWGxksaKxRTPOjKuU69cCO02AQ-nJhjcJg0wqcsZsR9uZ60J"
-                    rel="noopener noreferrer" target="_blank">Exercise 0. Text Editor: ASCII Town</a></p>
-            <h2>Troubleshooting</h2>
-            <p>Try to be patient when writing code, so much of programming is debugging – typos are one of the most
-                common
-                errors! If you find yourself stuck, try breaking your issue down into smaller, more manageable parts.
-            </p>
-            <p>Search Google or <a href="http://stackoverflow.com/" rel="noopener noreferrer" target="_blank">Stack
-                    Overflow</a> for how to solve those parts, one at a time. While frustrating, these bugs will may
-                lead
-                yout o discover something new you would not have considered before! </p>
-            <h2>Downloads</h2>
-            <p>To edit code, download <a href="https://code.visualstudio.com/download" rel="noopener noreferrer" target="_blank">Visual
-                    Studio Code</a>.<br />
-                For Browsing the web and viewing our pages, use <a href="https://www.google.com/chrome/" rel="noopener noreferrer"
-                    target="_blank">Google Chrome</a>
-                (we'll use Chrome exclusively because of its devtools).</p>
-            <h2>Online Tools</h2>
-            <h4>Debugging</h4>
-            <p><a href="https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&amp;utm_medium=redirect&amp;utm_campaign=2018Q2"
-                    rel="noopener noreferrer" target="_blank">Chrome's
-                    DevTools</a></p>
-            <h4>Getting Started</h4>
-            <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files"
-                    rel="noopener noreferrer" target="_blank">mozilla:
-                    Getting started with the web: Dealing with files</a><br />
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" rel="noopener noreferrer"
-                    target="_blank">mozilla:
-                    Getting started with the web: So what is HTML?</a><br />
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" rel="noopener noreferrer"
-                    target="_blank">mozilla:
-                    Getting started with the web: So what is CSS, really?</a><br />
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
-                    rel="noopener noreferrer" target="_blank">mozilla:
-                    Getting started with the web: So what is Javascript, really?</a></p>
-            <h4>HTML</h4>
-            <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" rel="noopener noreferrer" target="_blank">Mozilla:
-                    HTML</a><br />
-                <a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/" rel="noopener noreferrer"
-                    target="_blank">Shay Howe: Building Your
-                    First
-                    Web Page</a><br />
-                <a href="https://learn.shayhowe.com/html-css/getting-to-know-html/" rel="noopener noreferrer" target="_blank">learn.shayhowe.com/html-css/getting-to-know-html</a></p>
-            <h4>CSS</h4>
-            <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" rel="noopener noreferrer" target="_blank">Mozilla:
-                    CSS</a><br />
-                <a href="https://learn.shayhowe.com/html-css/getting-to-know-css/" rel="noopener noreferrer" target="_blank">Shay
-                    Howe: Getting to Know CSS</a><br />
-                <a href="https://learn.shayhowe.com/html-css/opening-the-box-model/" rel="noopener noreferrer" target="_blank">Shay
-                    Howe: Opening the Box Model</a><br />
-                <a href="http://www.htmldog.com/guides/css/intermediate/specificity/" rel="noopener noreferrer" target="_blank">CSS
-                    Specificity</a><br />
-                <a href="http://learnlayout.com/" rel="noopener noreferrer" target="_blank">Learn CSS Layout</a><br />
-                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="noopener noreferrer" target="_blank">FlexBox</a><br />
-                <a href="https://cvan.io/flexboxin5/" rel="noopener noreferrer" target="_blank">Flexbox in 5 Minutes</a><br />
-                <a href="https://css-tricks.com/almanac/properties/a/animation/" rel="noopener noreferrer" target="_blank">CSS
-                    Animations</a><br />
-                <a href="https://daneden.github.io/animate.css/" rel="noopener noreferrer" target="_blank">animate.css</a><br />
-                <a href="https://css-tricks.com/examples/ShapesOfCSS/" rel="noopener noreferrer" target="_blank">The
-                    Shapes
-                    of CSS</a><br />
-                <a href="http://spring2019.designing.tools/​http://bennettfeely.com/clippy/" rel="noopener noreferrer"
-                    target="_blank">Clippy CSS</a><br />
-                <a href="https://www.youtube.com/watch?v=s7ONvIgOWdM&amp;t=0s&amp;index=2&amp;list=PLqGj3iMvMa4IOmy04kDxh_hqODMqoeeCy"
-                    rel="noopener noreferrer" target="_blank">DevTips
-                    for Designers: CSS Basics (Part 1</a> - What is CSS?)<br />
-                <a href="https://www.youtube.com/watch?v=kejG8G0dr5U" rel="noopener noreferrer" target="_blank">DevTips
-                    for
-                    Designers: CSS Positioning (Part 1</a>)<br />
-                <a href="https://www.youtube.com/watch?v=Rf6zAP4YnZA" rel="noopener noreferrer" target="_blank">DevTips
-                    for
-                    Designers: CSS Positioning (Part 2</a>)</p>
-            <h4>Web Fonts</h4>
-            <p><a href="https://www.fontsquirrel.com/tools/webfont-generator" rel="noopener noreferrer" target="_blank">Font
-                    Squirrel</a><br />
-                <a href="https://www.typesample.com/" rel="noopener noreferrer" target="_blank">Type Sample</a><br />
-                <a href="https://fonts.google.com/" rel="noopener noreferrer" target="_blank">Google fonts</a></p>
-            <h4>More</h4>
-            <p><a href="http://www.lynda.com/Mac-OS-X-10-6-tutorials/Unix-for-Mac-OS-X-Users/78546-2.html" rel="noopener noreferrer"
-                    target="_blank">Unix for Mac
-                    OS
-                    X Users</a><br />
-                <a href="http://copypastecharacter.com/" rel="noopener noreferrer" target="_blank">Copy Paste Character</a><br />
-                <a href="http://devdocs.io/" rel="noopener noreferrer" target="_blank">Devdocs</a><br />
-                <a href="https://caniuse.com/" rel="noopener noreferrer" target="_blank">Can I Use?</a></p>
-            <h2>At CCA</h2>
-            <p><a href="https://portal.cca.edu/learning/learning-resources/student-sign-during-coaching-session-required/"
-                    rel="noopener noreferrer" target="_blank">CCA's
-                    Learning Resource Center</a></p>
-        </div>
-    </section>
-</body>
+    <div class="main">
+        <h1>Resources</h1>
+        <h2>Lectures</h2>
+        <p><a href="http://spring2019.designing.tools/resources/lecture01_internet_history.pdf" rel="noopener noreferrer"
+                target="_blank">Internet History</a><br />
+            <a href="http://spring2019.designing.tools/resources/lecture02_ASCII.pdf" rel="noopener noreferrer" target="_blank">ASCII
+                Art</a></p>
+        <h2>Technical Docs</h2>
+        <p><a href="https://paper.dropbox.com/doc/HTML--AWE8AYPwxeQUcIqFwWCCqgUyAQ-PntnlBxy7gSQ4yem3rJCY" rel="noopener noreferrer"
+                target="_blank">Review Technical Document: HTML Part 1</a></p>
+        <h2>In-Class Exercises</h2>
+        <p><a href="https://paper.dropbox.com/doc/In-class-exercise-Set-up-a-class-website-with-GitHub--AWFeE8Ihig8LoXYIuqFS8qdmAQ-BZ3x15gIvuKOawrP6RIh3"
+                rel="noopener noreferrer" target="_blank">In-Class Exercise: Class Website</a></p>
+        <h2>Workshop / Weekly Exercises</h2>
+        <p><a href="https://paper.dropbox.com/doc/Exercise-0-ASCII-Town--AWGxksaKxRTPOjKuU69cCO02AQ-nJhjcJg0wqcsZsR9uZ60J"
+                rel="noopener noreferrer" target="_blank">Exercise 0. Text Editor: ASCII Town</a></p>
+        <h2>Troubleshooting</h2>
+        <p>Try to be patient when writing code, so much of programming is debugging – typos are one of the most
+            common
+            errors! If you find yourself stuck, try breaking your issue down into smaller, more manageable parts.
+        </p>
+        <p>Search Google or <a href="http://stackoverflow.com/" rel="noopener noreferrer" target="_blank">Stack
+                Overflow</a> for how to solve those parts, one at a time. While frustrating, these bugs will may
+            lead
+            yout o discover something new you would not have considered before! </p>
+        <h2>Downloads</h2>
+        <p>To edit code, download <a href="https://code.visualstudio.com/download" rel="noopener noreferrer" target="_blank">Visual
+                Studio Code</a>.<br />
+            For Browsing the web and viewing our pages, use <a href="https://www.google.com/chrome/" rel="noopener noreferrer"
+                target="_blank">Google Chrome</a>
+            (we'll use Chrome exclusively because of its devtools).</p>
+        <h2>Online Tools</h2>
+        <h4>Debugging</h4>
+        <p><a href="https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&amp;utm_medium=redirect&amp;utm_campaign=2018Q2"
+                rel="noopener noreferrer" target="_blank">Chrome's
+                DevTools</a></p>
+        <h4>Getting Started</h4>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" rel="noopener noreferrer"
+                target="_blank">mozilla:
+                Getting started with the web: Dealing with files</a><br />
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" rel="noopener noreferrer"
+                target="_blank">mozilla:
+                Getting started with the web: So what is HTML?</a><br />
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics" rel="noopener noreferrer"
+                target="_blank">mozilla:
+                Getting started with the web: So what is CSS, really?</a><br />
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" rel="noopener noreferrer"
+                target="_blank">mozilla:
+                Getting started with the web: So what is Javascript, really?</a></p>
+        <h4>HTML</h4>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" rel="noopener noreferrer" target="_blank">Mozilla:
+                HTML</a><br />
+            <a href="https://learn.shayhowe.com/html-css/building-your-first-web-page/" rel="noopener noreferrer"
+                target="_blank">Shay Howe: Building Your
+                First
+                Web Page</a><br />
+            <a href="https://learn.shayhowe.com/html-css/getting-to-know-html/" rel="noopener noreferrer" target="_blank">learn.shayhowe.com/html-css/getting-to-know-html</a></p>
+        <h4>CSS</h4>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" rel="noopener noreferrer" target="_blank">Mozilla:
+                CSS</a><br />
+            <a href="https://learn.shayhowe.com/html-css/getting-to-know-css/" rel="noopener noreferrer" target="_blank">Shay
+                Howe: Getting to Know CSS</a><br />
+            <a href="https://learn.shayhowe.com/html-css/opening-the-box-model/" rel="noopener noreferrer" target="_blank">Shay
+                Howe: Opening the Box Model</a><br />
+            <a href="http://www.htmldog.com/guides/css/intermediate/specificity/" rel="noopener noreferrer" target="_blank">CSS
+                Specificity</a><br />
+            <a href="http://learnlayout.com/" rel="noopener noreferrer" target="_blank">Learn CSS Layout</a><br />
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="noopener noreferrer" target="_blank">FlexBox</a><br />
+            <a href="https://cvan.io/flexboxin5/" rel="noopener noreferrer" target="_blank">Flexbox in 5 Minutes</a><br />
+            <a href="https://css-tricks.com/almanac/properties/a/animation/" rel="noopener noreferrer" target="_blank">CSS
+                Animations</a><br />
+            <a href="https://daneden.github.io/animate.css/" rel="noopener noreferrer" target="_blank">animate.css</a><br />
+            <a href="https://css-tricks.com/examples/ShapesOfCSS/" rel="noopener noreferrer" target="_blank">The
+                Shapes
+                of CSS</a><br />
+            <a href="http://spring2019.designing.tools/​http://bennettfeely.com/clippy/" rel="noopener noreferrer"
+                target="_blank">Clippy CSS</a><br />
+            <a href="https://www.youtube.com/watch?v=s7ONvIgOWdM&amp;t=0s&amp;index=2&amp;list=PLqGj3iMvMa4IOmy04kDxh_hqODMqoeeCy"
+                rel="noopener noreferrer" target="_blank">DevTips
+                for Designers: CSS Basics (Part 1</a> - What is CSS?)<br />
+            <a href="https://www.youtube.com/watch?v=kejG8G0dr5U" rel="noopener noreferrer" target="_blank">DevTips
+                for
+                Designers: CSS Positioning (Part 1</a>)<br />
+            <a href="https://www.youtube.com/watch?v=Rf6zAP4YnZA" rel="noopener noreferrer" target="_blank">DevTips
+                for
+                Designers: CSS Positioning (Part 2</a>)</p>
+        <h4>Web Fonts</h4>
+        <p><a href="https://www.fontsquirrel.com/tools/webfont-generator" rel="noopener noreferrer" target="_blank">Font
+                Squirrel</a><br />
+            <a href="https://www.typesample.com/" rel="noopener noreferrer" target="_blank">Type Sample</a><br />
+            <a href="https://fonts.google.com/" rel="noopener noreferrer" target="_blank">Google fonts</a></p>
+        <h4>More</h4>
+        <p><a href="http://www.lynda.com/Mac-OS-X-10-6-tutorials/Unix-for-Mac-OS-X-Users/78546-2.html" rel="noopener noreferrer"
+                target="_blank">Unix for Mac
+                OS
+                X Users</a><br />
+            <a href="http://copypastecharacter.com/" rel="noopener noreferrer" target="_blank">Copy Paste Character</a><br />
+            <a href="http://devdocs.io/" rel="noopener noreferrer" target="_blank">Devdocs</a><br />
+            <a href="https://caniuse.com/" rel="noopener noreferrer" target="_blank">Can I Use?</a></p>
+        <h2>At CCA</h2>
+        <p><a href="https://portal.cca.edu/learning/learning-resources/student-sign-during-coaching-session-required/"
+                rel="noopener noreferrer" target="_blank">CCA's
+                Learning Resource Center</a></p>
+    </div>
+</div>
 
 </html>

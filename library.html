@@ -9,18 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Interactive 1</title>
 </head>
 
-<body class="mint">
-    <nav class="sidenav" role="navigation">
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="index.html" rel="home">Interactive 1</a>
-            </li>
-        </ul>
+<div class="container mint">
+
+    <nav class="sidenav" role="navigation" id="mySidenav">
+        <a href="index.html" rel="home">Interactive 1</a>
         <span class="meta">
             GRAPH-212-02</br>
             CCA</br>
@@ -30,81 +28,67 @@
             TA: <a href="mailto:j.luo@cca.edu">Jillian Luo</a></br>
             IA: <a href="mailto:henry@cca.edu">Henry Rivera</a></br>
         </span>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="syllabus.html">Syllabus</a>
-            </li>
-            <li class="menu-item">
-                <a href="calendar.html">Calendar</a>
-            </li>
-            <li class="menu-item">
-                <a href="projects.html">Projects</a>
-            </li>
-            <li class="menu-item">
-                <a href="resources.html">Resources</a>
-            </li>
-            <li class="menu-item">
-                <a href="library.html">Library</a>
-            </li>
-        </ul>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="projects.html">Projects</a>
+        <a href="resources.html">Resources</a>
+        <a href="library.html" class="is-active">Library</a>
+        <a class="icon">Menu</a>
     </nav>
 
+    <div class="main">
+        <h1>Library</h1>
 
-    <section>
-        <div class="main">
-            <h1>Library</h1>
-
-            <h2 class="library" id="geocities">How Geocities Suburbanized the Internet</h2>
-            <span class="byline">Tanner Howard, 2019</span>
-            <div class="pdf">
-                Download PDF:
-                <a href="assets/Remembering Geocities, the Suburbia of the Early Web - CityLab.pdf">How Geocities
-                    Suburbanized the Internet.pdf</a>
-            </div>
-            <div class="download-sentence">
-                Link: <a href="https://www.citylab.com/life/2019/01/geocities-archive-netscape-browser-first-web-suburbs-aol/580285/"
-                    rel="noopener noreferrer" target="_blank">citylab.com/life/2019/01/geocities-archive-netscape-browser-first-web-suburbs-aol/580285/</a>
-            </div>
-            <div class="text">
-                <figure><img src="/assets/digital-city.jpg" alt=""></figure>
-                <p>In the 1990s, AOL and Netscape got Americans onto the web, but it was Geocities—with its
-                    suburban-style “neighborhoods”—that made them feel at home.</p>
-                <hr class="more-space">
-            </div>
-
-
-            <h2 class="library" id="ASCII">Emoticon, Emoji, Text II: Just ASCII</h2>
-            <span class="byline">Tom McCormack</span>,
-            <span class="year">2013</span>
-            <div class="byline-extra"></div>
-            <div class="pdf">
-                Download PDF:
-                <a href="http://spring2019.designing.tools/content/6-library/1-just-ascii/Emoticon%2C%20Emoji%2C%20Text%20II%20-%20Just%20ASCII.pdf">Emoticon,
-                    Emoji, Text II - Just ASCII.pdf</a>
-            </div>
-            <div class="download-sentence">
-                Link: <a href="http://rhizome.org/editorial/2013/apr/30/emoticon-emoji-text-ii-ascii/" rel="noopener noreferrer"
-                    target="_blank">rhizome.org/editorial/2013/apr/30/emoticon-emoji-text-ii-ascii</a>
-            </div>
-            <div class="text">
-                <figure><img src="http://spring2019.designing.tools/content/6-library/1-just-ascii/ASCII-City.png" alt=""></figure>
-                <p>1.</p>
-                <p>Following in the footsteps of Baudelaire—and paving the way for the Surrealists and the French New
-                    Wave—early 20th-century artist Guillaume Apollinaire cultivated a cerebral taste for the most
-                    sensational
-                    elements of modern life. A poet by calling and a publicist by trade, Apollinaire seized on the
-                    outrageous
-                    whether he found it in the avant-garde (he coined the term &quot;Cubism&quot; in praise of early
-                    paintings
-                    by Braque and Picasso) or mass culture (he called the serialized tales of fictional super-villain
-                    Fantômas
-                    &quot;one of the richest works that exist.&quot;) Apollinaire’s poetry fed on the chaos of Paris in
-                    the
-                    early 1900s.</p>
-            </div>
-
+        <h2 class="library" id="geocities">How Geocities Suburbanized the Internet</h2>
+        <span class="byline">Tanner Howard, 2019</span>
+        <div class="pdf">
+            Download PDF:
+            <a href="assets/Remembering Geocities, the Suburbia of the Early Web - CityLab.pdf">How Geocities
+                Suburbanized the Internet.pdf</a>
         </div>
-    </section>
-</body>
+        <div class="download-sentence">
+            Link: <a href="https://www.citylab.com/life/2019/01/geocities-archive-netscape-browser-first-web-suburbs-aol/580285/"
+                rel="noopener noreferrer" target="_blank">citylab.com/life/2019/01/geocities-archive-netscape-browser-first-web-suburbs-aol/580285/</a>
+        </div>
+        <div class="text">
+            <figure><img src="/assets/digital-city.jpg" alt=""></figure>
+            <p>In the 1990s, AOL and Netscape got Americans onto the web, but it was Geocities—with its
+                suburban-style “neighborhoods”—that made them feel at home.</p>
+            <hr class="more-space">
+        </div>
+
+
+        <h2 class="library" id="ASCII">Emoticon, Emoji, Text II: Just ASCII</h2>
+        <span class="byline">Tom McCormack</span>,
+        <span class="year">2013</span>
+        <div class="byline-extra"></div>
+        <div class="pdf">
+            Download PDF:
+            <a href="http://spring2019.designing.tools/content/6-library/1-just-ascii/Emoticon%2C%20Emoji%2C%20Text%20II%20-%20Just%20ASCII.pdf">Emoticon,
+                Emoji, Text II - Just ASCII.pdf</a>
+        </div>
+        <div class="download-sentence">
+            Link: <a href="http://rhizome.org/editorial/2013/apr/30/emoticon-emoji-text-ii-ascii/" rel="noopener noreferrer"
+                target="_blank">rhizome.org/editorial/2013/apr/30/emoticon-emoji-text-ii-ascii</a>
+        </div>
+        <div class="text">
+            <figure><img src="http://spring2019.designing.tools/content/6-library/1-just-ascii/ASCII-City.png" alt=""></figure>
+            <p>1.</p>
+            <p>Following in the footsteps of Baudelaire—and paving the way for the Surrealists and the French New
+                Wave—early 20th-century artist Guillaume Apollinaire cultivated a cerebral taste for the most
+                sensational
+                elements of modern life. A poet by calling and a publicist by trade, Apollinaire seized on the
+                outrageous
+                whether he found it in the avant-garde (he coined the term &quot;Cubism&quot; in praise of early
+                paintings
+                by Braque and Picasso) or mass culture (he called the serialized tales of fictional super-villain
+                Fantômas
+                &quot;one of the richest works that exist.&quot;) Apollinaire’s poetry fed on the chaos of Paris in
+                the
+                early 1900s.</p>
+        </div>
+
+    </div>
+</div>
 
 </html>

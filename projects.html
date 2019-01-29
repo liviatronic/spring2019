@@ -9,18 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Interactive 1</title>
 </head>
 
-<body class="blue">
-    <nav class="sidenav" role="navigation">
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="index.html" rel="home">Interactive 1</a>
-            </li>
-        </ul>
+<div class="container blue">
+
+    <nav class="sidenav" role="navigation" id="mySidenav">
+        <a href="index.html" rel="home">Interactive 1</a>
         <span class="meta">
             GRAPH-212-02</br>
             CCA</br>
@@ -30,44 +28,30 @@
             TA: <a href="mailto:j.luo@cca.edu">Jillian Luo</a></br>
             IA: <a href="mailto:henry@cca.edu">Henry Rivera</a></br>
         </span>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="syllabus.html">Syllabus</a>
-            </li>
-            <li class="menu-item">
-                <a href="calendar.html">Calendar</a>
-            </li>
-            <li class="menu-item">
-                <a href="projects.html">Projects</a>
-            </li>
-            <li class="menu-item">
-                <a href="resources.html">Resources</a>
-            </li>
-            <li class="menu-item">
-                <a href="library.html">Library</a>
-            </li>
-        </ul>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="projects.html" class="is-active">Projects</a>
+        <a href="resources.html">Resources</a>
+        <a href="library.html">Library</a>
+        <a class="icon">Menu</a>
     </nav>
 
+    <div class="main">
+        <h1>Projects</h1>
+        <ul class="projects">
 
-    <section>
-        <div class="main">
-            <h1>Projects</h1>
-            <ul class="projects">
-
-                <li class="project-row">
-                    <h2><a class="projects" href="weekly-exercises.html" class="project">
-                            Workshop: Weekly Exercises </a></h2>
-                </li>
-                <li class="project-row">
-                    <h2 class="projects">Project 1</h2>
-                </li>
-                <li class="project-row">
-                    <h2 class="projects">Project 2</h2>
-                </li>
-            </ul>
-        </div>
-    </section>
-</body>
+            <li class="project-row">
+                <h2><a class="projects" href="weekly-exercises.html" class="project">
+                        Workshop: Weekly Exercises </a></h2>
+            </li>
+            <li class="project-row">
+                <h2 class="projects">Project 1</h2>
+            </li>
+            <li class="project-row">
+                <h2 class="projects">Project 2</h2>
+            </li>
+        </ul>
+    </div>
+</div>
 
 </html>

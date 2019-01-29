@@ -117,58 +117,59 @@ section {
 
 /* -----  Navigation  --------------- */
 .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
     z-index: 1;
-    overflow-x: hidden;
+    font-size: 20px;
     padding: 20px 0 0 20px;
+    margin: 0px;
+    display: block;
+    flex: 0 0 230px;
 }
 
-.meta,
-.meta a {
+.nav-container {
+    position: sticky;
+    top: 20px;
+}
+
+.meta {
+    margin: 6px 0 16px 0;
+    display: block;
     color: #B63F2B;
     font-size: 17px;
     font-family: 'Terminal Grotesque Open';
     text-decoration: none;
 }
 
-.meta {
-    margin: 6px 0 16px 0;
-    display: block;
+.sidenav .meta a {
+    display: inline;
+    color: #B63F2B;
 }
 
-ul.menu {
-    margin: 0px;
-    font-size: 20px;
-}
-
-.menu-item {
-    display: block;
-    margin: 0px;
-}
-
-.menu-item a {
-    border-bottom: 0;
+.sidenav a {
     text-decoration: none;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    display: block;
 }
 
-.menu-item.is-active a {
-    border-bottom: 1px solid #000000;
+a.is-active:before {
+    content: "➔ ";
 }
 
-/* -----  Main  ---------------------------------------- */
+.sidenav .icon {
+    display: none;
+}
+
+/* -----  Layout  ---------------------------------------- */
+
+.container {
+    display: flex;
+    height: auto;
+    min-height: 100vh;
+}
 
 .main {
-    margin-left: 260px;
-    width: 60%;
     max-width: 700px;
-    padding-top: 20px;
-    margin-bottom: 100px;
+    padding: 20px 20px 100px 20px;
+    flex: 2 2 60%;
 }
-
 
 img {
     width: 400px;
@@ -230,7 +231,7 @@ h1 {
 h2 {
     font-weight: 700;
     margin: 60px 0 12px 0;
-    line-height: .9;
+    /* line-height: 1; */
 }
 
 /* h3 {
@@ -433,4 +434,92 @@ ul.calendar .body {
 
 .doc {
     margin-top: 50px;
+}
+
+/* -----  Responsive mobile  --------------- */
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Interactive 1"). Show the link that should open and close the sidenav (.icon) */
+@media screen and (max-width: 600px) {
+
+    /* -----  Nav  --------------- */
+    .sidenav {
+        /* width: 100%; */
+        background: white;
+        height: auto;
+        padding: 10px;
+        position: relative;
+        flex: 0 0 auto;
+    }
+
+    .sidenav a:not(:first-child) {
+        display: none;
+    }
+
+    .sidenav .meta {
+        display: none;
+    }
+
+    .sidenav a {
+        display: inline;
+    }
+
+    .sidenav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .sidenav.responsive a {
+        display: inherit;
+        margin-bottom: 4px;
+    }
+
+    .sidenav.responsive a.icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .sidenav.responsive .meta {
+        display: block;
+        margin: 6px 0 16px 0;
+    }
+
+    .sidenav.sidenav.responsive .meta a {
+        display: inline;
+    }
+
+    /* -----  Layout  --------------- */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* -----  Content  --------------- */
+    .main {
+        margin: 0 auto;
+    }
+
+    .intro {
+        font-size: 40px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .projects-start-end {
+        display: none;
+    }
+}
+
+/* -----  Responsive medium  --------------- */
+@media screen and (max-width: 1000px) and (min-width: 601px) {
+    .intro {
+        font-size: 7vw;
+    }
+
+    .sidenav {
+        flex: 0 0 20%;
+    }
 }

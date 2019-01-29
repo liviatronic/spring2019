@@ -9,18 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Interactive 1</title>
 </head>
 
-<body class="lilac">
-    <nav class="sidenav" role="navigation">
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="index.html" rel="home">Interactive 1</a>
-            </li>
-        </ul>
+<div class="container lilac">
+
+    <nav class="sidenav" role="navigation" id="mySidenav">
+        <a href="index.html" rel="home">Interactive 1</a>
         <span class="meta">
             GRAPH-212-02</br>
             CCA</br>
@@ -30,126 +28,113 @@
             TA: <a href="mailto:j.luo@cca.edu">Jillian Luo</a></br>
             IA: <a href="mailto:henry@cca.edu">Henry Rivera</a></br>
         </span>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="syllabus.html">Syllabus</a>
-            </li>
-            <li class="menu-item">
-                <a href="calendar.html">Calendar</a>
-            </li>
-            <li class="menu-item">
-                <a href="projects.html">Projects</a>
-            </li>
-            <li class="menu-item">
-                <a href="resources.html">Resources</a>
-            </li>
-            <li class="menu-item">
-                <a href="library.html">Library</a>
-            </li>
-        </ul>
+        <a href="syllabus.html" class="is-active">Syllabus</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="projects.html">Projects</a>
+        <a href="resources.html">Resources</a>
+        <a href="library.html">Library</a>
+        <a class="icon">Menu</a>
     </nav>
 
+    <div class="main">
+        <h1>Syllabus</h1>
+        <h2>Course Overview</h2>
+        <p>This course will explore the possibilities of design online from a conceptual, historical and
+            programmatic perspective.</p>
+        <p>We will celebrate the Internet as a space for social and creative exchange as well as medium for
+            independent expression. However we will also consider the browser as a tool of creative expression, in
+            contrast to how it is often presented as a means of pragmatic exchange and consumption.</p>
+        <p>Through projects, readings, workshops, and presentations we will explore the relevance of network
+            technologies in the context of contemporary art and graphic design practices. </p>
+        <p>Students will learn basic HTML, CSS, and JS programming along with methods for conceptualizing,
+            designing, and developing websites. Outcomes won't necessary be practical, nor pragmatically
+            functional. Instead we will strive for a poetic understanding of design and the Internet as mediums for
+            critical research and discourse.</p>
 
-    <section>
-        <div class="main">
-            <h1>Syllabus</h1>
-            <h2>Course Overview</h2>
-            <p>This course will explore the possibilities of design online from a conceptual, historical and
-                programmatic perspective.</p>
-            <p>We will celebrate the Internet as a space for social and creative exchange as well as medium for
-                independent expression. However we will also consider the browser as a tool of creative expression, in
-                contrast to how it is often presented as a means of pragmatic exchange and consumption.</p>
-            <p>Through projects, readings, workshops, and presentations we will explore the relevance of network
-                technologies in the context of contemporary art and graphic design practices. </p>
-            <p>Students will learn basic HTML, CSS, and JS programming along with methods for conceptualizing,
-                designing, and developing websites. Outcomes won't necessary be practical, nor pragmatically
-                functional. Instead we will strive for a poetic understanding of design and the Internet as mediums for
-                critical research and discourse.</p>
+        <h2>Learning Outcomes</h2>
+        <ul>
+            <li>Develop a theoretical knowledge, technical understanding, and historical basis of the internet and
+                design online</li>
+            <li>Develop technical skills (HTML, CSS, and JS) to produce functioning websites</li>
+            <li>Stimulate critical positions around design principles within networked technologies </li>
+            <li>Analyze current digital aesthetics and their historical context</li>
+            <li>Understand the social and cultural implications of information flows online</li>
+            <li>Explore the Internet as a space that is public and private, and the corporate and political
+                tensions embedded in such condition</li>
+            <li>Gain insight into the contemporary landscape of Internet-based art and design practices</li>
+        </ul>
 
-            <h2>Learning Outcomes</h2>
-            <ul>
-                <li>Develop a theoretical knowledge, technical understanding, and historical basis of the internet and
-                    design online</li>
-                <li>Develop technical skills (HTML, CSS, and JS) to produce functioning websites</li>
-                <li>Stimulate critical positions around design principles within networked technologies </li>
-                <li>Analyze current digital aesthetics and their historical context</li>
-                <li>Understand the social and cultural implications of information flows online</li>
-                <li>Explore the Internet as a space that is public and private, and the corporate and political
-                    tensions embedded in such condition</li>
-                <li>Gain insight into the contemporary landscape of Internet-based art and design practices</li>
-            </ul>
+        <h2>Material Requirements</h2>
+        <ul>
+            <li>Personal laptop</li>
+            <li><a href="https://code.visualstudio.com/download" rel="noopener noreferrer" target="_blank">Visual
+                    Studio Code</a>
+                for editing and updating code</li>
+            <li><a href="https://pages.github.com/">Github pages</a> for website hosting</li>
+            <li><a href="https://www.dropbox.com/paper">Dropbox Paper</a> for reading discussions and text
+                documents</li>
+            <li>Adobe CC, or equivalent software (Sketch, Figma, Framer) for image/media generating and editing
+            </li>
+            <li>Phone, digital camera, scanner, screen capture etc.</li>
+        </ul>
 
-            <h2>Material Requirements</h2>
-            <ul>
-                <li>Personal laptop</li>
-                <li><a href="https://code.visualstudio.com/download" rel="noopener noreferrer" target="_blank">Visual
-                        Studio Code</a>
-                    for editing and updating code</li>
-                <li><a href="https://pages.github.com/">Github pages</a> for website hosting</li>
-                <li><a href="https://www.dropbox.com/paper">Dropbox Paper</a> for reading discussions and text
-                    documents</li>
-                <li>Adobe CC, or equivalent software (Sketch, Figma, Framer) for image/media generating and editing
-                </li>
-                <li>Phone, digital camera, scanner, screen capture etc.</li>
-            </ul>
+        <h2>Readings</h2>
+        <ul>
+            <li>Each student will be responsible for presenting a short verbal summary of one reading, and leading
+                a class discussion around it. Sign up for your week to present in <a href="https://paper.dropbox.com/doc/Readings--AWLNyg3nZllFobUI8vxohUVyAQ-jQ2DgXyzN2q3vINr4Ixwt"
+                    rel="noopener noreferrer" target="_blank">this Paper doc</a>.</li>
+            <li>For every reading, each student must submit 3 questions to that week’s Paper doc (viewable in the
+                Calendar section of this website) before 1pm the day of the assigned reading discussion.</li>
+        </ul>
 
-            <h2>Readings</h2>
-            <ul>
-                <li>Each student will be responsible for presenting a short verbal summary of one reading, and leading
-                    a class discussion around it. Sign up for your week to present in <a href="https://paper.dropbox.com/doc/Readings--AWLNyg3nZllFobUI8vxohUVyAQ-jQ2DgXyzN2q3vINr4Ixwt"
-                        rel="noopener noreferrer" target="_blank">this Paper doc</a>.</li>
-                <li>For every reading, each student must submit 3 questions to that week’s Paper doc (viewable in the
-                    Calendar section of this website) before 1pm the day of the assigned reading discussion.</li>
-            </ul>
+        <h2>In-Class Activities</h2>
+        <p>Tuesdays generally consists of any combination of the following:</p>
+        <ul>
+            <li>Reading presentation/discussion</li>
+            <li>Topic lecture/discussion</li>
+            <li>Project critique/discussion</li>
+            <li>Group activity</li>
+        </ul>
 
-            <h2>In-Class Activities</h2>
-            <p>Tuesdays generally consists of any combination of the following:</p>
-            <ul>
-                <li>Reading presentation/discussion</li>
-                <li>Topic lecture/discussion</li>
-                <li>Project critique/discussion</li>
-                <li>Group activity</li>
-            </ul>
+        <p>Thursdays generally consists of any combination of the following:</p>
+        <ul>
+            <li>Skill based workshop</li>
+            <li>Personal working time</li>
+            <li>One one one meeting</li>
+        </ul>
 
-            <p>Thursdays generally consists of any combination of the following:</p>
-            <ul>
-                <li>Skill based workshop</li>
-                <li>Personal working time</li>
-                <li>One one one meeting</li>
-            </ul>
+        <h2>Grading</h2>
+        <ul>
+            <li>60% ... Projects 1 and 2</li>
+            <li>30% ... Workshop / Weekly Exercises</li>
+            <li>10% ... Reading Presentation and Participation (reading responses, class discussion, critique,
+                etc.)</li>
+        </ul>
+        <p>Letter grades represent the following:</p>
+        <p>A = excellent;<br />
+            B = good;<br />
+            C = satisfactory;<br />
+            D = unsatisfactory;<br />
+            F = failure.</p>
+        <p>A grade of C- or less is considered a failing grade for required courses within the major, and you will
+            need to retake this course if you achieve a grade lower than a C.</p>
 
-            <h2>Grading</h2>
-            <ul>
-                <li>60% ... Projects 1 and 2</li>
-                <li>30% ... Workshop / Weekly Exercises</li>
-                <li>10% ... Reading Presentation and Participation (reading responses, class discussion, critique,
-                    etc.)</li>
-            </ul>
-            <p>Letter grades represent the following:</p>
-            <p>A = excellent;<br />
-                B = good;<br />
-                C = satisfactory;<br />
-                D = unsatisfactory;<br />
-                F = failure.</p>
-            <p>A grade of C- or less is considered a failing grade for required courses within the major, and you will
-                need to retake this course if you achieve a grade lower than a C.</p>
+        <h2>Attendance</h2>
+        <p>Attendance is required. Students are expected to be on time and remain in class for the entire period
+            scheduled. Work missed due to any type of absence is the student’s responsibility. Three or more
+            absences will result in a failing grade. Three arrivals later than 15 minutes after class begins equals
+            an absence. If you absolutely must miss class, email me in advance.</p>
 
-            <h2>Attendance</h2>
-            <p>Attendance is required. Students are expected to be on time and remain in class for the entire period
-                scheduled. Work missed due to any type of absence is the student’s responsibility. Three or more
-                absences will result in a failing grade. Three arrivals later than 15 minutes after class begins equals
-                an absence. If you absolutely must miss class, email me in advance.</p>
+        <h2>Plagiarism</h2>
+        <p>Students are expected to generate their own work. At the same time the nature of the web is inherently
+            build on sharing knowledge and resources, and building upon others work – as such we will get familiar
+            with using pre-existing code, language, and imagery as materials we shape into our own unique projects.
+            We will learn how to appropriate mindfully, and credit work properly.</p>
 
-            <h2>Plagiarism</h2>
-            <p>Students are expected to generate their own work. At the same time the nature of the web is inherently
-                build on sharing knowledge and resources, and building upon others work – as such we will get familiar
-                with using pre-existing code, language, and imagery as materials we shape into our own unique projects.
-                We will learn how to appropriate mindfully, and credit work properly.</p>
-
-            <h2>Code</h2>
-            <p>Remixing existing code is often an important part of learning, but any code you take from an online
-                resource needs to be commented with the source location where it appears in your project. For example:</p>
-            <pre><code>For HTML
+        <h2>Code</h2>
+        <p>Remixing existing code is often an important part of learning, but any code you take from an online
+            resource needs to be commented with the source location where it appears in your project. For example:</p>
+        <pre><code>For HTML
               
               &lt;!-- source: http://cool.biz/cool_code --&gt;
               &lt;div id="coolThing"&gt;
@@ -171,69 +156,68 @@
               function doACoolThing(){
                   does a cool thing.
               }</code></pre>
-            <p>Further, when using found code make sure that your use of it is appropriate to your project, and outside
-                code should not dictate the design of your projects as experienced by the user. If the function or
-                style of your site is identical to your source, that is likely a problem. Any snippets of code on the
-                <a href="http://spring2019.designing.tools/resources" rel="noopener noreferrer" target="_blank">resources
-                    page</a> are free to use. If you are unsure if your reuse of code is appropriate, ask!</p>
+        <p>Further, when using found code make sure that your use of it is appropriate to your project, and outside
+            code should not dictate the design of your projects as experienced by the user. If the function or
+            style of your site is identical to your source, that is likely a problem. Any snippets of code on the
+            <a href="http://spring2019.designing.tools/resources" rel="noopener noreferrer" target="_blank">resources
+                page</a> are free to use. If you are unsure if your reuse of code is appropriate, ask!</p>
 
-            <h2>Design</h2>
-            <p>You may not use graphics, images, video, audio, or any other design elements that you did not create
-                yourself, or that are obvious recreations of others work, under the pretense that they are your work.
-                With the possible exemption of: </p>
-            <ul>
-                <li>Graphics such as a Facebook or Twitter icon in reference to those sites, etc, and that only in
-                    accordance with those organizations guidelines for such an elements use. In such cases those
-                    graphics should be a minor element in your design. </li>
-                <li>If an assignment requires you to display found imagery and it is properly attributed </li>
-                <li>Use of imagery in the <a href="https://creativecommons.org/" rel="noopener noreferrer" target="_blank">Creative
-                        Commons</a> that is cited and used based on its license</li>
-            </ul>
-            <p>If you are unsure if the use of a design element is appropriate, ask!</p>
+        <h2>Design</h2>
+        <p>You may not use graphics, images, video, audio, or any other design elements that you did not create
+            yourself, or that are obvious recreations of others work, under the pretense that they are your work.
+            With the possible exemption of: </p>
+        <ul>
+            <li>Graphics such as a Facebook or Twitter icon in reference to those sites, etc, and that only in
+                accordance with those organizations guidelines for such an elements use. In such cases those
+                graphics should be a minor element in your design. </li>
+            <li>If an assignment requires you to display found imagery and it is properly attributed </li>
+            <li>Use of imagery in the <a href="https://creativecommons.org/" rel="noopener noreferrer" target="_blank">Creative
+                    Commons</a> that is cited and used based on its license</li>
+        </ul>
+        <p>If you are unsure if the use of a design element is appropriate, ask!</p>
 
-            <h2>Writing</h2>
-            <p>Unless stipulated by an assignment, or approved by the instructor, all written content should be written
-                by you. If it is approved by the instructor, make sure to cite the text appropriately.</p>
+        <h2>Writing</h2>
+        <p>Unless stipulated by an assignment, or approved by the instructor, all written content should be written
+            by you. If it is approved by the instructor, make sure to cite the text appropriately.</p>
 
-            <h2>Submitting Your Work and Class Archive</h2>
-            <p>Any exercise or project that you submit for grading must be uploaded to your class website before each
-                class. Even if you are done with your work on your local computer, it will be considered late work if
-                it is not visible on your class website.</p>
-            <p>If a project is not uploaded on time, it will be docked one letter grade per class meeting that it is
-                late. You can resubmit your work at the end of the semester with revisions to be regraded.</p>
-            <p>At the end of the term, you will be required to send me an archival .zip file to document your projects.
-                If you do not send me the archive, you will fail the class.</p>
-            <p>Please follow the instructions below:</p>
-            <ul>
-                <li>Divide your materials into three project folders: Workshop, P1, P2. Within each project folder,
-                    make three new folders: Project, Documentation,
-                    Description.</li>
-                <li>Put all of your project materials (code and required assets) into the Project folder.</li>
-                <li>In the Documentation folder, place a series of .png files, or a video screen capture (made using
-                    Quicktime) to concisely document your project.</li>
-                <li>Within the Description folder, place a text file containing a paragraph description of your
-                    project.</li>
-                <li>When you make the .zip file, send it to me over wetransfer.com.</li>
-            </ul>
-            <p>Remember:</p>
-            <ul>
-                <li>When creating the archive, make sure your assets are optimized for web so that the file sizes are
-                    as small as possible</li>
-                <li>Make sure every link on your class homepage is working.</li>
-            </ul>
+        <h2>Submitting Your Work and Class Archive</h2>
+        <p>Any exercise or project that you submit for grading must be uploaded to your class website before each
+            class. Even if you are done with your work on your local computer, it will be considered late work if
+            it is not visible on your class website.</p>
+        <p>If a project is not uploaded on time, it will be docked one letter grade per class meeting that it is
+            late. You can resubmit your work at the end of the semester with revisions to be regraded.</p>
+        <p>At the end of the term, you will be required to send me an archival .zip file to document your projects.
+            If you do not send me the archive, you will fail the class.</p>
+        <p>Please follow the instructions below:</p>
+        <ul>
+            <li>Divide your materials into three project folders: Workshop, P1, P2. Within each project folder,
+                make three new folders: Project, Documentation,
+                Description.</li>
+            <li>Put all of your project materials (code and required assets) into the Project folder.</li>
+            <li>In the Documentation folder, place a series of .png files, or a video screen capture (made using
+                Quicktime) to concisely document your project.</li>
+            <li>Within the Description folder, place a text file containing a paragraph description of your
+                project.</li>
+            <li>When you make the .zip file, send it to me over wetransfer.com.</li>
+        </ul>
+        <p>Remember:</p>
+        <ul>
+            <li>When creating the archive, make sure your assets are optimized for web so that the file sizes are
+                as small as possible</li>
+            <li>Make sure every link on your class homepage is working.</li>
+        </ul>
 
-            <h2>Credits</h2>
-            <p>This course was developed in 2019 in collaboration with in collaboration with chris hamamoto and Will
-                Ruby. It is based on a course that was designed with Federico Pérez Villoro in 2017, and influenced by
-                curriculums developed by <a href="http://www.designforthe.net/" rel="noopener noreferrer" target="_blank">Mindy
-                    Seu</a>, <a href="http://clementvalla.com/" rel="noopener noreferrer" target="_blank">Clement Valla</a>,
-                and <a href="http://laurelschwulst.com" rel="noopener noreferrer" target="_blank">Laurel Schwulst</a>,
-                and past versions of Interactive 1 at CCA.</p>
-            <p>It was
-                adapted from a site developed by Laurel Schwulst. </p>
+        <h2>Credits</h2>
+        <p>This course was developed in 2019 in collaboration with in collaboration with chris hamamoto and Will
+            Ruby. It is based on a course that was designed with Federico Pérez Villoro in 2017, and influenced by
+            curriculums developed by <a href="http://www.designforthe.net/" rel="noopener noreferrer" target="_blank">Mindy
+                Seu</a>, <a href="http://clementvalla.com/" rel="noopener noreferrer" target="_blank">Clement Valla</a>,
+            and <a href="http://laurelschwulst.com" rel="noopener noreferrer" target="_blank">Laurel Schwulst</a>,
+            and past versions of Interactive 1 at CCA.</p>
+        <p>It was
+            adapted from a site developed by Laurel Schwulst. </p>
 
-        </div>
-    </section>
-</body>
+    </div>
+</div>
 
 </html>
