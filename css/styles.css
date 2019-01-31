@@ -284,6 +284,10 @@ hr.more-space {
     margin-top: 60px;
 }
 
+.no-space {
+    margin: 0;
+}
+
 /* -----  Colored backgrounds  --------------- */
 .thistle {
     background-color: thistle;
