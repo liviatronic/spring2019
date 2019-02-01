@@ -7,7 +7,7 @@ body {
 /* positioning */
 
 
-#container {
+.container {
     max-width: 650px;
 }
 
@@ -35,9 +35,13 @@ h2 {
     margin-top: 0em;
 }
 
-b {
+strong {
     padding-left: 100px;
     display: block;
+}
+
+ul li ul:last-of-type {
+    margin-bottom: 20px;
 }
 
 /* links */
