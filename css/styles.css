@@ -183,7 +183,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 30px;
-    line-height: 1.2;
+    line-height: 1.07;
     color: #B63F2B;
     font-style: normal;
     word-spacing: normal;
@@ -199,6 +199,7 @@ p {
 
 .small {
     font-size: 20px;
+    max-width: 550px;
 }
 
 .intro {
@@ -267,6 +268,10 @@ li {
     margin: 0 0 20px;
 }
 
+.small li {
+    margin: 0 0 8px;
+}
+
 pre {
     padding: 20px;
     background: #f2f2f2;
@@ -282,10 +287,12 @@ code {
 hr {
     border-top: 1px dashed #ff3f3d;
     margin-top: 40px;
+    mix-blend-mode: multiply;
 }
 
 hr.more-space {
     margin-top: 60px;
+    mix-blend-mode: multiply;
 }
 
 .no-space {
@@ -332,7 +339,7 @@ h2.projects {
 
 /* -----  Resources  --------------- */
 .resources h2 {
-    margin: 40px 0 6px 0;
+    margin: 40px 0 8px 0;
 }
 
 .resources h2:first-of-type {
@@ -346,12 +353,6 @@ h2.projects {
 
 .resources h4:first-of-type {
     margin-top: 0;
-}
-
-.resources li {
-    /* list-style-type: none; */
-    font-size: 20px;
-    margin: 0 0 6px;
 }
 
 
@@ -391,6 +392,33 @@ li.library-row div {
 h2.library {
     margin-bottom: 2px;
 }
+
+.filtered {
+    background: #5038fe;
+    mix-blend-mode: multiply;
+    display: inline-grid;
+    margin-bottom: 20px;
+}
+
+.filtered img {
+    mix-blend-mode: screen;
+    -webkit-filter: grayscale(100%) contrast(150%);
+    filter: grayscale(100%) contrast(150%);
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.filtered a:hover {
+    background: none;
+    mix-blend-mode: normal;
+}
+
+.filtered img:hover {
+    filter: none;
+    mix-blend-mode: normal;
+    transition: 0.2s;
+}
+
 
 /* -----  Calendar  --------------- */
 .calendar h2 {
