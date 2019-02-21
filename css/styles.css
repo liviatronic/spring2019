@@ -145,8 +145,8 @@ section {
 }
 
 .sidenav a {
-    text-decoration: none;
     display: block;
+    margin-bottom: 2px;
 }
 
 a.is-active:before {
