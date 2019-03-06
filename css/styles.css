@@ -200,6 +200,7 @@ p {
 .small {
     font-size: 20px;
     max-width: 550px;
+    line-height: 1.15;
 }
 
 .intro {
@@ -234,19 +235,19 @@ h1 {
 }
 
 h2 {
-    font-weight: 700;
-    margin: 60px 0 12px 0;
+    font-family: 'Terminal Grotesque Open';
+    font-size: 40px;
+    margin: 40px 0 0 0;
 }
 
-/* h3 {
-    font-family: antique-olive-condensed, sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: .5px;
-    margin: 40px 0 12px 0;
-    line-height: .9;
-} */
+h2:first-of-type {
+    margin-top: 60px;
+}
+
+h3 {
+    font-weight: 700;
+    margin: 60px 0 0 0;
+}
 
 h4 {
     margin: 30px 0 2px 0;
@@ -273,7 +274,7 @@ li {
 
 pre {
     padding: 20px;
-    background: #f2f2f2;
+    background: rgba(242, 242, 242, 0.44);
     margin: 10px 0 20px 0;
 }
 
@@ -285,7 +286,7 @@ code {
 
 hr {
     border-top: 1px dashed #ff3f3d;
-    margin-top: 40px;
+    margin: 30px 0 30px 0;
     mix-blend-mode: multiply;
 }
 
@@ -323,27 +324,7 @@ hr.more-space {
     background-color: #ffd994;
 }
 
-/* -----  Projects  --------------- */
-li.project-row {
-    list-style-type: none;
-}
-
-ul.projects {
-    margin: 40px 0 0 0;
-}
-
-h2.projects {
-    margin-top: 24px;
-}
-
 /* -----  Resources  --------------- */
-.resources h2 {
-    margin: 40px 0 8px 0;
-}
-
-.resources h2:first-of-type {
-    margin-top: 60px;
-}
 
 .resources h4 {
     margin: 20px 0 6px 0;
@@ -356,27 +337,6 @@ h2.projects {
 
 
 /* -----  Library  --------------- */
-ul.library {
-    margin: 0px;
-}
-
-li.library-row {
-    list-style-type: none;
-}
-
-li.library-row div {
-    text-align: right;
-}
-
-li.library-row span.title {
-    width: 480px;
-}
-
-li.library-row span.title,
-li.library-row div {
-    display: inline-block;
-    vertical-align: top;
-}
 
 .pdf {
     margin-bottom: 30px;
@@ -384,10 +344,6 @@ li.library-row div {
 
 .download-sentence {
     margin-top: 16px;
-}
-
-h2.library {
-    margin-bottom: 2px;
 }
 
 .filtered {
@@ -418,7 +374,7 @@ h2.library {
 
 
 /* -----  Calendar  --------------- */
-.calendar h2 {
+.calendar h3 {
     margin-top: 40px;
 }
 
@@ -442,8 +398,13 @@ ul.calendar li.calendar-row {
 
 ul.calendar li ul li {
     list-style-type: circle;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-size: 20px;
+    line-height: 1.15;
+}
+
+ul.calendar li ul li:last-of-type {
+    margin-bottom: 30px;
 }
 
 ul.calendar .body {
@@ -460,18 +421,15 @@ ul.calendar .body {
     color: #ff3f3d;
 }
 
-.week {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    margin-right: 30px;
-    font-size: 20px;
-
-}
-
+.week,
 .days {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
 
+.week {
+    text-decoration: none;
+    margin-right: 30px;
 }
 
 .projects-start-end {
@@ -490,7 +448,7 @@ ul.calendar .body {
 }
 
 .doc {
-    margin-top: 50px;
+    margin: 30px 0 30px 0;
 }
 
 /* -----  Responsive mobile  --------------- */
