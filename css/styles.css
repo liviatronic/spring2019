@@ -200,7 +200,7 @@ p {
 .small {
     font-size: 20px;
     max-width: 550px;
-    line-height: 1.15;
+    line-height: 1.2;
 }
 
 .intro {
@@ -217,6 +217,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+h2 a:hover {
+    text-decoration: none;
 }
 
 strong {
@@ -238,6 +242,7 @@ h2 {
     font-family: 'Terminal Grotesque Open';
     font-size: 40px;
     margin: 40px 0 0 0;
+    max-width: 550px;
 }
 
 h2:first-of-type {
@@ -257,6 +262,7 @@ h5 {
     font-size: 20px;
     font-weight: 700;
     margin: 10px 0 6px 0;
+    max-width: 550px;
 }
 
 ul {
@@ -272,16 +278,29 @@ li {
     margin: 0 0 8px;
 }
 
+.plain {
+    list-style-type: none;
+}
+
 pre {
     padding: 20px;
-    background: rgba(242, 242, 242, 0.44);
+    background: rgba(255, 255, 255, 0.25);
     margin: 10px 0 20px 0;
 }
 
 code {
-    font-family: 'Courier New', Courier, monospace;
-    white-space: pre-line;
-    font-size: 17px;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+blockquote {
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.3;
+    max-width: 550px;
+    margin: 0 0 30px 20px;
 }
 
 hr {
@@ -297,6 +316,34 @@ hr.more-space {
 
 .no-space {
     margin: 0;
+}
+
+.space-below {
+    margin-bottom: 20px;
+}
+
+.space-below-30 {
+    margin-bottom: 30px;
+}
+
+.space-below-40 {
+    margin-bottom: 40px;
+}
+
+.space-below-10 {
+    margin-bottom: 10px;
+}
+
+.space-below-6 {
+    margin-bottom: 6px;
+}
+
+.space-above-60 {
+    margin-top: 60px;
+}
+
+h2:first-of-type.space-below {
+    margin: 0 0 60px 0;
 }
 
 /* -----  Colored backgrounds  --------------- */
@@ -400,7 +447,7 @@ ul.calendar li ul li {
     list-style-type: circle;
     margin-bottom: 8px;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.2;
 }
 
 ul.calendar li ul li:last-of-type {
