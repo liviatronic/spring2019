@@ -338,6 +338,10 @@ hr.more-space {
     margin-bottom: 6px;
 }
 
+.space-above-20 {
+    margin-top: 20px;
+}
+
 .space-above-60 {
     margin-top: 60px;
 }
